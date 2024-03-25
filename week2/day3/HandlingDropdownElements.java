@@ -12,9 +12,9 @@ public class HandlingDropdownElements {
 		driver.get("http://leaftaps.com/opentaps/control/main");
 		driver.manage().window().maximize();
 
-		driver.findElement(By.id("username")).sendKeys("demosalesmanager");
-		driver.findElement(By.id("password")).sendKeys("crmsfa");
-		driver.findElement(By.className("decorativeSubmit")).click();
+		driver.findElement(By.xpath("//label[@for='username']")).sendKeys("demosalesmanager");
+		driver.findElement(By.xpath("//label[@for='password']")).sendKeys("crmsfa");
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
 
 		driver.findElement(By.linkText("CRM/SFA")).click();
 		driver.findElement(By.linkText("Leads")).click();

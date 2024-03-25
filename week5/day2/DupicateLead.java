@@ -1,7 +1,8 @@
-package week2.day3;
+package week5.day2;
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class DupicateLead extends Firstchromemethod{
@@ -48,7 +49,7 @@ public class DupicateLead extends Firstchromemethod{
 		else {
 			System.out.println("Unable to verified");
 		}
-		driver.close();
+		
 	}
 
 }

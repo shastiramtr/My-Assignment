@@ -4,11 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class CreateAccount {
-
-	public static void main(String[] args) throws InterruptedException {
-		ChromeDriver driver = new ChromeDriver();
+	
+	public ChromeDriver driver;
+     @Test
+	public void createaccount() throws InterruptedException {
+		 driver = new ChromeDriver();
 		driver.get("http://leaftaps.com/opentaps/control/main");
 		driver.manage().window().maximize();
 		
@@ -50,6 +54,7 @@ public class CreateAccount {
 			System.out.println("Unable to verified");
 
 		}
+		driver.close();
 		
 		
 
